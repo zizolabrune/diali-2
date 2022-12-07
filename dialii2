@@ -1,0 +1,35 @@
+ weboo
+
+Sudo apt update
+Sudo apt upgrade
+
+Installation des paquets pour le serveur web
+Installation du serveur web avec php 
+“sudo apt install apache2 php”
+
+sudo systemctl enable apache2
+
+systemctl status apache2
+
+-vérifier que le serveur web fonctionne correctement( adresse publique sur gooogle
+
+
+Création d’un dossier projet
+“sudo mkdir /var/www/ws”
+sudo mv /var/www/ws /var/www/projet
+
+
+ls /var/www:
+cd /var/www/projet
+
+
+
+-Création d'une page html nommé index.html
+Ouvrir le fichier index.html et y mettre du contenu
+cd /var/www/projet
+“sudo nano index.html”
+
+Se positionner dans le dossier de configuration
+“cd /etc/apache2/sites-available/”
+Copier la configuration par défaut dans projet
+“sudo cp 000-default.conf projet.conf
